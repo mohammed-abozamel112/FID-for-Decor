@@ -398,10 +398,25 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
       </div>
       <div class="col-md-4">
-        <h3>Contact Info</h3>
-        <div class="contact-item"> <span>Address</span>
-          <p>4321 California St,<br>
-            San Francisco, CA 12345</p>
+        <h3>معلومات التواصل</h3>
+        <div class="contact-item"> <span>العنوان</span>
+          <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:300px;height:300px;">
+            <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                style="height:100%;width:100%;border:0;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=شركة+فيد+للتسويق+Prince+Sultan+Rd,+Al+Zuhur,+Khamis+Mushait+62461&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+            </div><a class="embedded-map-code" rel="nofollow" href="https://www.bootstrapskins.com/themes"
+              id="grab-maps-authorization">premium bootstrap themes</a>
+            <style>
+              #embedded-map-display img.text-marker {
+                max-width: none !important;
+                background: none !important;
+              }
+
+              img {
+                max-width: none
+              }
+            </style>
+          </div>
         </div>
         <div class="contact-item"> <span>Email</span>
           <p>info@company.com</p>
