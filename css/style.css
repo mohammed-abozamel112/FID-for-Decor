@@ -55,7 +55,7 @@ h5 {
 }
 
 p {
-	font-size: 17px;
+	font-size: 1.5rem;
 }
 
 p.intro {
@@ -103,8 +103,6 @@ ol {
 ul,
 ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
 }
 
 hr {
@@ -596,11 +594,14 @@ a:focus,
 
 /* Services Section */
 #services {
-	padding: 120px 0;
+	padding: auto;
 }
 
 #services .service {
-	padding-left: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 }
 
 #services img {
@@ -625,16 +626,20 @@ a:focus,
 	text-align: center;
 }
 
+ul.cat {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	gap: 2rem;
+	justify-content: center;
+}
+
 ul.cat li {
-	display: inline-block;
+	width: fit-content;
+	margin: 1.5rem 0;
 }
 
-ol.type li {
-	display: inline-block;
-	margin-left: 20px;
-}
-
-ol.type li a {
+ul.type a {
 	color: #a7c44c;
 	font-weight: 400;
 	font-size: 15px;
@@ -645,12 +650,12 @@ ol.type li a {
 	letter-spacing: 0.5px;
 }
 
-ol.type li a.active {
+ul.type a.active {
 	background: #a7c44c;
 	color: #fff;
 }
 
-ol.type li a:hover {
+ul.type a:hover {
 	background: #a7c44c;
 	color: #fff;
 }
@@ -843,14 +848,14 @@ label {
 	margin: 0 20px;
 }
 
-#footer .social i.fa {
-	font-size: 26px;
+#footer .social i {
+	font-size: 2.5rem;
 	padding: 4px;
 	color: #a7c44c;
 	transition: all 0.3s;
 }
 
-#footer .social i.fa:hover {
+#footer .social i:hover {
 	color: #eee;
 }
 
@@ -864,4 +869,9 @@ label {
 
 #footer a:hover {
 	color: #a7c44c;
+}
+
+
+.nivo-lightbox-image img {
+	width: 90% !important;
 }
