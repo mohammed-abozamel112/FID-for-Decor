@@ -133,9 +133,7 @@ afterSlideChange();
 function resetAnimation() {
   runningTimeBar.style.animation = "none"; // Remove current animation
   runningTimeBar.offsetHeight; // Trigger reflow to restart animation
-  runningTimeBar.style.animation = runningTime ${
-    TIME_AUTO_NEXT / 1000
-  }s linear forwards; // Restart animation
+  runningTimeBar.style.animation = `runningTime ${TIME_AUTO_NEXT / 1000}s linear forwards`; // Restart animation
 }
 
 // Handles slider navigation (next/prev)
@@ -164,15 +162,15 @@ function afterSlideChange() {
   ); // The first visible item is the active one
 
   const activeIndex =
-    activeItem < 10 ? 0${activeItem} : activeItem.toString();
+    activeItem < 10 ? `0${activeItem}` : activeItem.toString();
 
   const div = document.createElement("div");
   div.classList.add("slide-number");
-  div.textContent = ${activeIndex}/${sliderItems.length};
+  div.textContent = `${activeIndex}/${sliderItems.length}`;
 
   arrowsDiv.appendChild(div);
 
-  console.log(Current active slide original index: ${activeIndex});
+  console.log(`Current active slide original index: ${activeIndex}`);
 
   updateProgressBar();
   resetCarouselState();
@@ -188,7 +186,7 @@ function updateProgressBar() {
     1; // The first visible item is the active one
 
   const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
-  progressBar.style.width = ${progressPercentage}%; // Update the progress bar's width
+  progressBar.style.width = `${progressPercentage}%`; // Update the progress bar's width
 }
 
 // Resets the carousel state after navigation
