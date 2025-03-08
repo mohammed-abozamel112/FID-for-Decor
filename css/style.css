@@ -29,7 +29,7 @@
 
   /* Border Styles */
   --border-color: var(--primary-color);
-  --border-width: 2px;
+  --border-width: 0.25rem;
 
   /* Shadow Styles */
   --box-shadow-color: rgba(0, 0, 0, 0.7);
@@ -69,7 +69,7 @@ body[dir="rtl"] {
 
 /* Typography */
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   font-weight: 500;
   font-size: var(--font-size-xLarge);
   color: var(--text-color-dark);
@@ -152,6 +152,14 @@ hr {
   box-shadow: none;
 }
 
+/* padding */
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* padding */
+
 a:focus,
 .btn:focus,
 .btn:active:focus,
@@ -230,7 +238,7 @@ a:focus,
 
 /* Section Title */
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 5rem;
   text-align: center;
   /* Centering the title */
 }
@@ -243,7 +251,7 @@ a:focus,
 .btn-custom {
   text-transform: uppercase;
   color: var(--text-color-white);
-  text-shadow: 0 0 3px #859c3c;
+  text-shadow: 0 0 3px var(--primary-color);
   background-color: var(--primary-color);
   border: 0;
   padding: 14px 20px;
@@ -258,8 +266,8 @@ a:focus,
 .btn-custom.focus,
 .btn-custom:active,
 .btn-custom.active {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: #94ae44;
+  color: var(--text-color-light);
+  background-color: var(--primary-color);
 }
 
 /* Carousel Styles */
@@ -384,7 +392,7 @@ body[dir="rtl"] .carousel .list .item:nth-child(n + 7) {
 
 .list .item .content {
   position: absolute;
-  text-align: left;
+  text-align: right;
   /* Default LTR */
   color: var(--text-color-white);
   z-index: 3;
@@ -394,7 +402,7 @@ body[dir="rtl"] .carousel .list .item:nth-child(n + 7) {
   top: 100%;
   transform: translateY(-100%);
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
   transition: all var(--transition-time);
 }
 
@@ -933,4 +941,49 @@ ul.type a:hover {
 
 .nivo-lightbox-image img {
   width: 90% !important;
+}
+
+#inner_social {
+  position: fixed;
+  bottom: 4rem;
+  left: 1.5rem;
+  z-index: 9999;
+}
+
+.inner_social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inner_social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+.inner_social-links a:hover {
+  background-color: transparent;
+  transform: scale(1.2) rotate(10deg);
+}
+
+.inner_social-links i {
+  font-size: 2rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
 }
