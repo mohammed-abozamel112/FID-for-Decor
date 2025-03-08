@@ -947,26 +947,26 @@ ul.type a:hover {
 #inner_social {
   position: fixed;
   bottom: 4rem;
-  left: 1.5rem;
+  left: 2rem;
   z-index: 9999;
 }
 
 .inner_social-links {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .inner_social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   background-color: transparent;
   border-radius: 50%;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease;
   animation: bounce 1.5s infinite alternate ease-in-out;
 }
 
@@ -976,7 +976,7 @@ ul.type a:hover {
 }
 
 .inner_social-links i {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 @keyframes bounce {
