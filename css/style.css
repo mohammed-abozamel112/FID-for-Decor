@@ -760,8 +760,8 @@ body[dir="rtl"] #about img {
 }
 
 #services img {
-  width: 30rem!important;
-  height: 30rem!important;
+  width: 30rem !important;
+  height: 30rem !important;
   border-radius: 75px 0 75px 0;
   /* RTL-specific adjustments */
   box-shadow: 15px 0 var(--primary-color);
@@ -904,15 +904,23 @@ ul.type a:hover {
 /* Footer Section*/
 #footer {
   background: #333;
-  padding: 50px 0 20px 0;
+  padding: 2rem;
 }
 
 #footer .social {
   margin-bottom: 50px;
 }
+#footer .social ul{
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem .5rem;
+}
 
 #footer .social ul li {
-  display: inline-block;
   margin: 0 20px;
 }
 
@@ -928,7 +936,7 @@ ul.type a:hover {
 }
 
 #footer p {
-  font-size: 15px;
+  font-size: var(--font-size-small);
 }
 
 #footer a {
@@ -936,7 +944,7 @@ ul.type a:hover {
 }
 
 #footer a:hover {
-  color: #a7c44c;
+  color: var(--text-color-light);
 }
 
 
