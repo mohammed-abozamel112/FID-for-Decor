@@ -133,7 +133,9 @@ afterSlideChange();
 function resetAnimation() {
   runningTimeBar.style.animation = "none"; // Remove current animation
   runningTimeBar.offsetHeight; // Trigger reflow to restart animation
-  runningTimeBar.style.animation = `runningTime ${TIME_AUTO_NEXT / 1000}s linear forwards`; // Restart animation
+  runningTimeBar.style.animation = `runningTime ${
+    TIME_AUTO_NEXT / 1000
+  }s linear forwards`; // Restart animation
 }
 
 // Handles slider navigation (next/prev)
