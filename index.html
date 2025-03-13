@@ -62,103 +62,49 @@
   <section id="slider">
     <div class="carousel">
       <div class="list">
-        <div class="item" style="background-image: url(./img/1.jpg);">
-          <div class="content">
+        <style>
+          .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+          }
+        </style>
+        <div class="item">
+          <video autoplay loop muted>
+            <source src="./video/1.mp4" type="video/mp4">
+          </video>
+          <!--  <div class="content">
             <div class="title">SUNRISE ON PEAKS</div>
             <div class="name">Sunrise</div>
-            <div class="des">Witness the serene beauty of the sunrise over
-              majestic
-              mountain peaks. A moment of pure tranquility.</div>
-          </div>
+            <div class="des">Witness the serene beauty of the sunrise over majestic mountain peaks. A moment of pure
+              tranquility.</div>
+          </div> -->
         </div>
 
-        <div class="item" style="background-image: url(./img/2.webp);">
-          <div class="content">
-            <div class="title">RUGGED ROCKS</div>
-            <div class="name">Rocky</div>
-            <div class="des">Explore the rugged beauty of barren rocky mountains.
-              A
-              testament to nature's raw power.</div>
-          </div>
+        <div class="item">
+          <video autoplay loop muted>
+            <source src="./video/2.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="content">
+            <div class="title">SUNRISE ON PEAKS</div>
+            <div class="name">Sunrise</div>
+            <div class="des">Witness the serene beauty of the sunrise over majestic mountain peaks. A moment of pure
+              tranquility.</div>
+          </div> -->
         </div>
-
-        <div class="item" style="background-image: url(./img/3.jpeg);">
-          <div class="content">
-            <div class="title">FOREST PATHWAY</div>
-            <div class="name">Forest</div>
-            <div class="des">A peaceful trail through dense green forests. Perfect
-              for
-              reconnecting with nature.</div>
-          </div>
+        <div class="item">
+          <video autoplay loop muted>
+            <source src="./video/3.mp4" type="video/mp4">
+          </video>
+          <!--  <div class="content">
+            <div class="title">SUNRISE ON PEAKS</div>
+            <div class="name">Sunrise</div>
+            <div class="des">Witness the serene beauty of the sunrise over majestic mountain peaks. A moment of pure
+              tranquility.</div>
+          </div> -->
         </div>
-
-        <div class="item" style="background-image: url(./img/4.jpeg);">
-          <div class="content">
-            <div class="title">COLORFUL MEADOW</div>
-            <div class="name">Meadow</div>
-            <div class="des">A colorful meadow filled with butterflies and
-              blooming
-              flowers. Nature at its best.</div>
-          </div>
-        </div>
-
-        <div class="item" style="background-image: url(./img/5.jpeg);">
-          <div class="content">
-            <div class="title">SERENE LAKE</div>
-            <div class="name">Lake</div>
-            <div class="des">A calm and serene lake surrounded by towering trees
-              and
-              mountains. A perfect escape.</div>
-          </div>
-        </div>
-
-        <div class="item" style="background-image: url(./img/6.jpeg);">
-          <div class="content">
-            <div class="title">PEAKS IN THE CLOUDS</div>
-            <div class="name">Clouds</div>
-            <div class="des">Mountain peaks wrapped in clouds. A dreamy sight that
-              inspires awe and wonder.</div>
-          </div>
-        </div>
-
-        <div class="item" style="background-image: url(./img/7.jpeg);">
-          <div class="content">
-            <div class="title">RIVERBANK PARADISE</div>
-            <div class="name">Riverbank</div>
-            <div class="des">A picturesque riverbank flowing through lush greenery
-              and
-              vibrant landscapes.</div>
-          </div>
-        </div>
-
-        <div class="item" style="background-image: url(./img/8.jpeg);">
-          <div class="content">
-            <div class="title">MYSTIC RIDGES</div>
-            <div class="name">Ridges</div>
-            <div class="des">Discover the mystic beauty of mountain ridges under a
-              cloudy sky. Perfect for adventurers.</div>
-          </div>
-        </div>
-
-        <div class="item" style="background-image: url(./img/9.png);">
-          <div class="content">
-            <div class="title">GOLDEN CLIFFS</div>
-            <div class="name">Cliffs</div>
-            <div class="des">Golden cliffs basking in sunlight. A stunning view
-              that
-              captures the heart of nature.</div>
-          </div>
-        </div>
-
-        <div class="item" style="background-image: url(./img/10.jpeg);">
-          <div class="content">
-            <div class="title">PEACEFUL VALLEY</div>
-            <div class="name">Valley</div>
-            <div class="des">A peaceful valley surrounded by towering mountains. A
-              perfect destination for solitude.</div>
-          </div>
-        </div>
-
       </div>
 
       <!--next prev button-->
@@ -253,40 +199,144 @@
       <div class="section-title text-center center">
         <h2>أعمالنا</h2>
       </div>
+      <!--     -->
       <div class="categories">
         <ul class="cat type">
           <li><a href="#" data-filter="*" class="active">الكل</a></li>
-          <li><a href="#" data-filter=".residential">التصميم الخارجي</a></li>
-          <li><a href="#" data-filter=".office">التصميم الداخلي</a></li>
-          <li><a href="#" data-filter=".commercial">البيت الذكي</a></li>
+          <li><a href="#" data-filter=".park">حدائق خارجية</a></li>
+          <li><a href="#" data-filter=".bed">غرف نوم</a></li>
+          <li><a href="#" data-filter=".living">مجالس</a></li>
+          <li><a href="#" data-filter=".counter">مداخل استقبال</a></li>
+          <li><a href="#" data-filter=".tel">دولاب تلفزيون</a></li>
         </ul>
         <div class="clearfix"></div>
       </div>
       <div class="row">
         <div class="portfolio-items">
-          <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <!-- park -->
+          <div class="col-sm-6 col-md-4 col-lg-4 park">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/larger/1.jpg" title="Project Title"
+              <div class="hover-bg"> <a href="./img/portfolio/larger/park/IMG-20250312-WA0027.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Project Name</h4>
                   </div>
-                  <img src="img/portfolio/smaller/1.jpg" class="img-responsive" alt="Project Title">
+                  <img src="./img/portfolio/larger/park/IMG-20250312-WA0027.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <!-- park -->
+          <!-- bed -->
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
             <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/larger/2.jpg" title="Project Title"
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0002.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0002.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0003.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0003.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0004.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0004.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0005.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0005.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0006.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0006.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0006.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0006.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 bed">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/bedrooms/IMG-20250312-WA0008.jpg"
+                  title="Project Title" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/bedrooms/IMG-20250312-WA0008.jpg" class="img-responsive"
+                    alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <!-- bed -->
+           <!-- living -->
+          <div class="col-sm-6 col-md-4 col-lg-4 living">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/living/1.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
                     <h4>Project Name</h4>
                   </div>
-                  <img src="img/portfolio/smaller/2.jpg" class="img-responsive" alt="Project Title">
+                  <img src="./img/portfolio/larger/living/1.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 office">
+          <div class="col-sm-6 col-md-4 col-lg-4 living">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/living/2.jpg" title="Project Title"
+                  data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/living/2.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <!-- living -->
+          <div class="col-sm-6 col-md-4 col-lg-4 counter">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="img/portfolio/larger/3.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
@@ -297,6 +347,19 @@
                 </a> </div>
             </div>
           </div>
+          <!-- tel -->
+          <div class="col-sm-6 col-md-4 col-lg-4 tel">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="./img/portfolio/larger/tel/1.jpg" title="Project Title"
+                  data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Project Name</h4>
+                  </div>
+                  <img src="./img/portfolio/larger/tel/1.jpg" class="img-responsive" alt="Project Title">
+                </a> </div>
+            </div>
+          </div>
+          <!-- tel -->
         </div>
       </div>
     </div>
@@ -359,9 +422,6 @@
   <!-- floating contact  -->
   <div id="inner_social">
     <div class="inner_social-links">
-      <a href="mailto:info@fid.sa" target="_blank" title="ايميل">
-        <i class="fa-regular fa-envelope" style="color: #FFD43B;"></i>
-      </a>
       <a href="tel:+966530030468" target="_blank" title="موبايل">
         <i class="fa-solid fa-phone" style="color: #2583cb;"></i>
       </a>

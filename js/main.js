@@ -93,8 +93,8 @@ const items = Array.from(document.querySelectorAll(".item"));
 const runningTimeBar = document.querySelector(".carousel .timeRunning");
 
 // Timing configurations
-const TIME_RUNNING = 2000; // Animation duration for the transition
-const TIME_AUTO_NEXT = 4000; // Auto-slide duration
+const TIME_RUNNING = 10000; // Animation duration for the transition
+const TIME_AUTO_NEXT = 12000; // Auto-slide duration
 
 // Initialize timeout variables
 let transitionTimeout;
