@@ -919,7 +919,8 @@ ul.type a:hover {
   transform: translateY(30px);
   transition: all 0.3s ease-in;
 }
-
+#contact{
+padding-bottom: 10rem !important;}
 /* Footer Section*/
 #footer {
   background: #333;
