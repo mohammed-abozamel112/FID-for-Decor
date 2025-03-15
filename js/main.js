@@ -117,7 +117,7 @@ prevBtn.addEventListener("click", () => handleSliderNavigation("prev"));
 
 // Add attribute to each item
 items.forEach((item, index) => {
-  item.querySelector(".title").setAttribute("data-item", index + 1);
+  item.setAttribute("data-item", index + 1);
 });
 
 // Automatically navigate to the next slide
@@ -150,18 +150,16 @@ function handleSliderNavigation(direction) {
     carousel.classList.add("prev"); // Add the "prev" class for transition
   }
 
-  afterSlideChange(); // Log the active slide index
+  afterSlideChange(); // Update slide number and progress bar
 }
 
-// Logs the current active slide's original index
+// Updates the slide number and progress bar
 function afterSlideChange() {
   const slideNumberElement = document.querySelector(".slide-number");
   if (slideNumberElement) slideNumberElement.remove();
 
   const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
-  const activeItem = parseInt(
-    sliderItems[1].querySelector(".title").getAttribute("data-item")
-  ); // The first visible item is the active one
+  const activeItem = parseInt(sliderItems[0].getAttribute("data-item")); // The first visible item is the active one
 
   const activeIndex =
     activeItem < 10 ? `0${activeItem}` : activeItem.toString();
@@ -172,8 +170,6 @@ function afterSlideChange() {
 
   arrowsDiv.appendChild(div);
 
-  console.log(`Current active slide original index: ${activeIndex}`);
-
   updateProgressBar();
   resetCarouselState();
 }
@@ -181,11 +177,8 @@ function afterSlideChange() {
 // Updates the progress bar based on the active slide index
 function updateProgressBar() {
   const totalSlides = items.length;
-
   const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
-  const activeItem =
-    parseInt(sliderItems[0].querySelector(".title").getAttribute("data-item")) +
-    1; // The first visible item is the active one
+  const activeItem = parseInt(sliderItems[0].getAttribute("data-item")); // The first visible item is the active one
 
   const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
   progressBar.style.width = `${progressPercentage}%`; // Update the progress bar's width
