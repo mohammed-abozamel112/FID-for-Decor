@@ -212,8 +212,7 @@ function resetCarouselState() {
   resetAnimation();
 } */
 
-
-  // Select DOM elements
+// Select DOM elements
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 const carousel = document.querySelector(".carousel");
@@ -333,3 +332,19 @@ function resetCarouselState() {
   // Reset the running time bar animation
   resetAnimation();
 }
+
+// Scroll to top
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".scrollToTop").fadeIn();
+    } else {
+      $(".scrollToTop").fadeOut();
+    }
+  });
+  //Click event to scroll to top
+  $(".scrollToTop").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
+});

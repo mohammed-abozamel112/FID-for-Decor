@@ -5,7 +5,7 @@
 :root {
   /* Primary Theme Colors */
   --primary-color: rgb(199, 128, 20);
-  --secondary-color: #d36e10;
+  --secondary-color: #fbac02;
   /* Example secondary color */
   --accent-color: #eee;
   /* Example accent color */
@@ -13,6 +13,7 @@
   /* Text Colors */
   --text-color-dark: #333;
   --text-color-light: #777;
+  --text-color-gold: #db000e;
   --text-color-white: #fff;
 
   /* Font Sizes */
@@ -841,4 +842,35 @@ ul.type a:hover {
   100% {
     transform: translateY(-15px);
   }
+}
+
+/* Scroll Back to Top*/
+.scrollToTop {
+  background: #db000e;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 99;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.scrollToTop i {
+  color: var(--text-color-white);
+}
+
+.scrollToTop:hover {
+  text-decoration: none;
+  /* opacity: 0.8; */
+  background: var(--secondary-color);
+}
+
+.scrollToTop:hover i {
+  color: #db000e;
 }
