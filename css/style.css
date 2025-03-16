@@ -274,11 +274,6 @@ a:focus,
   background-color: var(--primary-color);
 }
 
-:root {
-  --transition-time: 0.5s;
-  --right-position: 50px;
-}
-
 /* carousel */
 #slider {
   height: 100dvh;
@@ -303,8 +298,8 @@ a:focus,
 }
 
 .carousel .list .item {
-  width: 180px;
-  height: 250px;
+  width: 18rem;
+  height: 22rem;
   position: absolute;
   bottom: 150px;
   left: calc(var(--left-position) + 3%);
@@ -340,8 +335,6 @@ a:focus,
 
 
 .carousel .list .item:nth-child(2) {
-  width: 180px;
-  height: 250px;
   position: absolute;
   bottom: 150px;
   left: 35%;
@@ -396,6 +389,21 @@ a:focus,
   display: flex;
   gap: 5%;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .arrows {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: auto;
+    width: calc(100% - var(--left-position) + 20%);
+    z-index: 100;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+  }
+
 }
 
 .arrows button {
