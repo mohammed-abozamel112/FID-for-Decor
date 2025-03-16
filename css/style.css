@@ -500,6 +500,7 @@ body[dir="rtl"] #about .about-text {
   /* RTL-specific adjustments */
   box-shadow: -15px 0 var(--primary-color);
   /* Default LTR */
+  max-height: 40rem;
 }
 
 body[dir="rtl"] #about img {
