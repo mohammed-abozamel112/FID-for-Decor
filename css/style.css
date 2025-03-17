@@ -510,6 +510,7 @@ body[dir="rtl"] #about .about-text {
   box-shadow: -15px 0 var(--primary-color);
   /* Default LTR */
   max-height: 40rem;
+  min-width: 80%;
 }
 
 body[dir="rtl"] #about img {
