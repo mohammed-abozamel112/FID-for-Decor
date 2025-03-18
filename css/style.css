@@ -115,6 +115,11 @@ a {
   /* Remove default underline */
 }
 
+a.disabled {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
 a:hover,
 a:focus {
   color: #222;
