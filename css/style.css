@@ -208,7 +208,7 @@ a:focus,
   text-transform: uppercase;
   color: var(--primary-color);
   font-weight: 400;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-large);
   padding: 5px 0;
   border: var(--border-width) solid transparent;
   letter-spacing: 0.5px;

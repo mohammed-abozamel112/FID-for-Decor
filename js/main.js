@@ -26,7 +26,7 @@ function main() {
 
     // Show Menu on Book
     $(window).bind("scroll", function () {
-      var navHeight = $(window).height() - 500;
+      var navHeight = $(window).height() - 10;
       if ($(window).scrollTop() > navHeight) {
         $(".navbar-default").addClass("on");
       } else {
@@ -36,7 +36,7 @@ function main() {
 
     $("body").scrollspy({
       target: ".navbar-default",
-      offset: 80,
+      offset: 10,
     });
 
     // Hide nav on click
@@ -203,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
   afterSlideChange();
 });
 
-
 // Scroll to top
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -215,7 +214,8 @@ $(document).ready(function () {
   });
   //Click event to scroll to top
   $(".scrollToTop").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 800);
+    $("html, body").animate({ scrollTop: $("#portfolio").offset().top }, 800);
     return false;
   });
+
 });
