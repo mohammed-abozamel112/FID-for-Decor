@@ -4,7 +4,8 @@
 body,
 body[dir=rtl],
 html {
-  font-family: Roboto, sans-serif
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
 }
 
 #menu a.navbar-brand,
