@@ -1,2 +1,8 @@
+# Basic robots.txt for FID Decore website
+# Last updated: 2023-11-15
+
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://decor-fid.netlify.app/sitemap.xml
