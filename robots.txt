@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://d-fid.com//sitemap.xml
+Sitemap: https://d-fid.com/sitemap.xml
